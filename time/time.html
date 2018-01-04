@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--保证屏幕可以缩放-->
+		<title>Time</title>
+		<!-- Bootstrap -->
+	</head>
+
+	<body style="background-color: #FAFAFA;">
+		<p id="localTime"></p>
+		<p id="zone"></p>
+
+		<div>
+			<select id="l_hour" onchange="showlocaltime($('#l_hour'),$('#l_minute'),$('#l_second'))"></select>
+			<select id="l_minute" onchange="showlocaltime($('#l_hour'),$('#l_minute'),$('#l_second'))"></select>
+			<select id="l_second" onchange="showlocaltime($('#l_hour'),$('#l_minute'),$('#l_second'))"></select>
+		</div>
+		<p id="GMT"></p>
+		<div>
+			<select id="g_hour" onchange="showgmt($('#g_hour'),$('#g_minute'),$('#g_second'))"></select>
+			<select id="g_minute" onchange="showgmt($('#g_hour'),$('#g_minute'),$('#g_second'))"></select>
+			<select id="g_second" onchange="showgmt($('#g_hour'),$('#g_minute'))"></select>
+		</div>
+		<script src="web_assets/js/vendor/jquery-3.2.1.min.js"></script>
+		<script src="web_assets/js/main.js"></script>
+
+	</body>
+
+</html>
